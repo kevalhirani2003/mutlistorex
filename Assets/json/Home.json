@@ -1,0 +1,54 @@
+{
+  "categories": [
+    {
+      "id": "1",
+      "imageName": "Men",
+      "imagePath": "Assets/Images/Men.png"
+    },
+    {
+      "id": "2",
+      "imageName": "Kids",
+      "imagePath": "Assets/Images/Kids.png"
+    },
+    {
+      "id": "3",
+      "imageName": "Ladies",
+      "imagePath": "Assets/Images/Ladies.png"
+    },
+    {
+      "id": "4",
+      "imageName": "Lehenaga",
+      "imagePath": "Assets/Images/Lehenga.png"
+    },
+    {
+      "id": "5",
+      "imageName": "sarees",
+      "imagePath": "Assets/Images/Men.png"
+    },
+    {
+      "id": "6",
+      "imageName": "Rajasthani Dress",
+      "imagePath": "Assets/Images/Kids.png"
+    },
+    {
+      "id": "7",
+      "imageName": "Kurtis",
+      "imagePath": "Assets/Images/Ladies.png"
+    },
+    {
+      "id": "8",
+      "imageName": "Tops",
+      "imagePath": "Assets/Images/Lehenga.png"
+    },
+    {
+      "id": "9",
+      "imageName": "MEN",
+      "imagePath": "Assets/Images/Men.png"
+    },
+    {
+      "id": "10",
+      "imageName": "KIDS",
+      "imagePath": "Assets/Images/Kids.png"
+    }
+  ]
+}

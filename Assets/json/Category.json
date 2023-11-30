@@ -1,0 +1,451 @@
+{
+  "categories": [
+    {
+      "id": "1",
+      "name": "Men",
+      "imagePath": "Assets/Images/Men.png",
+      "subcategories": [
+        {
+          "id": "1",
+          "name": "Men's Casual Shirt",
+          "price": 39.99,
+          "description": "Comfortable and stylish casual shirts for men",
+          "imagePath": "Assets/Images/1.png"
+        },
+        {
+          "id": "2",
+          "name": "Men's Formal Shirt",
+          "price": 49.99,
+          "description": "Elegant formal shirts suitable for any occasion",
+          "imagePath": "Assets/Images/2.png"
+        },
+        {
+          "id": "3",
+          "name": "Men's Jeans",
+          "price": 59.99,
+          "description": "Stylish and durable jeans for men",
+          "imagePath": "Assets/Images/3.png"
+        },
+        {
+          "id": "4",
+          "name": "Men's T-Shirts",
+          "price": 29.99,
+          "description": "Comfortable and versatile T-shirts for men",
+          "imagePath": "Assets/Images/4.png"
+        },
+        {
+          "id": "5",
+          "name": "Men's Shoes",
+          "price": 79.99,
+          "description": "Stylish and comfortable shoes for men",
+          "imagePath": "Assets/Images/5.png"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "name": "Kids",
+      "imagePath": "Assets/Images/Kids.png",
+      "subcategories": [
+        {
+          "id": "1",
+          "name": "Kids T-Shirt",
+          "price": 19.99,
+          "description": "Colorful and playful T-shirts for kids",
+          "imagePath": "Assets/Images/10.png"
+        },
+        {
+          "id": "2",
+          "name": "Kids Jeans",
+          "price": 29.99,
+          "description": "Durable and comfortable jeans for active kids",
+          "imagePath": "Assets/Images/6.png"
+        },
+        {
+          "id": "3",
+          "name": "Kids Dresses",
+          "price": 24.99,
+          "description": "Adorable dresses for fashionable kids",
+          "imagePath": "Assets/Images/7.png"
+        },
+        {
+          "id": "4",
+          "name": "Kids Shoes",
+          "price": 19.99,
+          "description": "Cute and comfortable shoes for kids",
+          "imagePath": "Assets/Images/8.png"
+        },
+        {
+          "id": "5",
+          "name": "Kids Accessories",
+          "price": 14.99,
+          "description": "Fun accessories for trendy kids",
+          "imagePath": "Assets/Images/9.png"
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "name": "Ladies",
+      "imagePath": "Assets/Images/Ladies.png",
+      "subcategories": [
+        {
+          "id": "1",
+          "name": "Ladies Dress",
+          "price": 59.99,
+          "description": "Stylish and trendy dresses for ladies",
+          "imagePath": "Assets/Images/1.png"
+        },
+        {
+          "id": "2",
+          "name": "Ladies Tops",
+          "price": 29.99,
+          "description": "Fashionable tops for a chic look",
+          "imagePath": "Assets/Images/2.png"
+        },
+        {
+          "id": "3",
+          "name": "Ladies Jeans",
+          "price": 39.99,
+          "description": "Comfortable and stylish jeans for ladies",
+          "imagePath": "Assets/Images/3.png"
+        },
+        {
+          "id": "4",
+          "name": "Ladies Accessories",
+          "price": 19.99,
+          "description": "Accessorize your look with trendy accessories",
+          "imagePath": "Assets/Images/4.png"
+        },
+        {
+          "id": "5",
+          "name": "Ladies Shoes",
+          "price": 49.99,
+          "description": "Elegant shoes for ladies with a taste for fashion",
+          "imagePath": "Assets/Images/5.png"
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "name": "Lehenga",
+      "imagePath": "Assets/Images/Lehenga.png",
+      "subcategories": [
+        {
+          "id": "1",
+          "name": "Traditional Lehenga",
+          "price": 79.99,
+          "description": "Exquisite traditional lehenga for special occasions",
+          "imagePath": "Assets/Images/10.png"
+        },
+        {
+          "id": "2",
+          "name": "Modern Lehenga",
+          "price": 89.99,
+          "description": "Contemporary lehenga designs for a modern touch",
+          "imagePath": "Assets/Images/9.png"
+        },
+        {
+          "id": "3",
+          "name": "Bridal Lehenga",
+          "price": 129.99,
+          "description": "Luxurious bridal lehenga for the perfect wedding look",
+          "imagePath": "Assets/Images/8.png"
+        },
+        {
+          "id": "4",
+          "name": "Designer Lehenga",
+          "price": 99.99,
+          "description": "Unique and stylish designer lehenga for fashion-forward women"
+          ,
+          "imagePath": "Assets/Images/7.png"
+        },
+        {
+          "id": "5",
+          "name": "Lehenga Accessories",
+          "price": 29.99,
+          "description": "Accessorize your lehenga with elegant accessories",
+          "imagePath": "Assets/Images/6.png"
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "name": "Sarees",
+      "imagePath": "Assets/Images/Kids.png",
+      "subcategories": [
+        {
+          "id": "1",
+          "name": "Silk Saree",
+          "price": 99.99,
+          "description": "Elegant silk sarees for special occasions"
+          ,
+          "imagePath": "Assets/Images/1.png"
+        },
+        {
+          "id": "2",
+          "name": "Cotton Saree",
+          "price": 69.99,
+          "description": "Comfortable cotton sarees for everyday wear"
+          ,
+          "imagePath": "Assets/Images/2.png"
+        },
+        {
+          "id": "3",
+          "name": "Banarasi Saree",
+          "price": 119.99,
+          "description": "Traditional Banarasi sarees for a timeless look",
+          "imagePath": "Assets/Images/3.png"
+        },
+        {
+          "id": "4",
+          "name": "Designer Saree",
+          "price": 149.99,
+          "description": "Stylish and unique designer sarees for a fashion statement"
+          ,
+          "imagePath": "Assets/Images/4.png"
+        },
+        {
+          "id": "5",
+          "name": "Chiffon Saree",
+          "price": 79.99,
+          "description": "Lightweight and elegant chiffon sarees for a graceful appearance",
+          "imagePath": "Assets/Images/5.png"
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "name": "Rajasthani Dress",
+      "imagePath": "Assets/Images/Lehenga.png",
+      "subcategories": [
+        {
+          "id": "1",
+          "name": "Traditional Rajasthani Dress",
+          "price": 49.99,
+          "description": "Authentic Rajasthani attire for cultural events"
+          ,
+          "imagePath": "Assets/Images/10.png"
+        },
+        {
+          "id": "2",
+          "name": "Modern Rajasthani Fusion",
+          "price": 59.99,
+          "description": "Blend of tradition and modernity in Rajasthani fashion"
+          ,
+          "imagePath": "Assets/Images/6.png"
+        },
+        {
+          "id": "3",
+          "name": "Rajasthani Kurti",
+          "price": 29.99,
+          "description": "Comfortable and stylish kurtis inspired by Rajasthani culture"
+          ,
+          "imagePath": "Assets/Images/1.png"
+        },
+        {
+          "id": "4",
+          "name": "Rajasthani Lehenga",
+          "price": 89.99,
+          "description": "Lehenga designs influenced by the vibrant Rajasthani culture",
+          "imagePath": "Assets/Images/8.png"
+        },
+        {
+          "id": "5",
+          "name": "Rajasthani Accessories",
+          "price": 19.99,
+          "description": "Accessorize your look with colorful Rajasthani accessories"
+          ,
+          "imagePath": "Assets/Images/7.png"
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "name": "Kurtis",
+      "imagePath": "Assets/Images/Kids.png",
+      "subcategories": [
+        {
+          "id": "1",
+          "name": "Casual Kurtis",
+          "price": 29.99,
+          "description": "Comfortable and stylish casual kurtis for ladies",
+          "imagePath": "Assets/Images/10.png"
+        },
+        {
+          "id": "2",
+          "name": "Party Wear Kurtis",
+          "price": 39.99,
+          "description": "Chic kurtis suitable for parties and events"
+          ,
+          "imagePath": "Assets/Images/1.png"
+        },
+        {
+          "id": "3",
+          "name": "Designer Kurtis",
+          "price": 49.99,
+          "description": "Unique and trendy designer kurtis for a fashionable look",
+          "imagePath": "Assets/Images/5.png"
+        },
+        {
+          "id": "4",
+          "name": "Ethnic Kurtis",
+          "price": 34.99,
+          "description": "Ethnic-inspired kurtis for a traditional touch",
+          "imagePath": "Assets/Images/7.png"
+        },
+        {
+          "id": "5",
+          "name": "Formal Kurtis",
+          "price": 44.99,
+          "description": "Elegant and formal kurtis for a sophisticated appearance"
+          ,
+          "imagePath": "Assets/Images/3.png"
+        }
+      ]
+    },
+    {
+      "id": "8",
+      "name": "Tops",
+      "imagePath": "Assets/Images/Kids.png",
+      "subcategories": [
+        {
+          "id": "1",
+          "name": "Casual Tops",
+          "price": 19.99,
+          "description": "Comfortable and trendy casual tops for ladies"
+          
+          
+          ,
+          "imagePath": "Assets/Images/10.png"
+        },
+        {
+          "id": "2",
+          "name": "Formal Tops",
+          "price": 29.99,
+          "description": "Elegant tops suitable for formal occasions"
+          ,
+          "imagePath": "Assets/Images/2.png"
+        },
+        {
+          "id": "3",
+          "name": "Party Wear Tops",
+          "price": 39.99,
+          "description": "Chic tops for a stylish party look"
+          ,
+          "imagePath": "Assets/Images/2.png"
+        },
+        {
+          "id": "4",
+          "name": "Printed Tops",
+          "price": 24.99,
+          "description": "Trendy tops with unique prints for a fashionable appearance"
+          ,
+          "imagePath": "Assets/Images/3.png"
+        },
+        {
+          "id": "5",
+          "name": "Sleeveless Tops",
+          "price": 14.99,
+          "description": "Cool and comfortable sleeveless tops for warm days"
+          ,
+          "imagePath": "Assets/Images/4.png"
+        }
+      ]
+    },
+    {
+      "id": "9",
+      "name": "MEN",
+      "imagePath": "Assets/Images/Men.png",
+      "subcategories": [
+        {
+          "id": "1",
+          "name": "Men's Jeans",
+          "price": 49.99,
+          "description": "Stylish and durable jeans for men"
+          ,
+          "imagePath": "Assets/Images/1.png"
+        },
+        {
+          "id": "2",
+          "name": "Men's T-Shirts",
+          "price": 29.99,
+          "description": "Comfortable and versatile T-shirts for men"
+          ,
+          "imagePath": "Assets/Images/5.png"
+        },
+        {
+          "id": "3",
+          "name": "Men's Jackets",
+          "price": 69.99,
+          "description": "Warm and stylish jackets for men"
+          ,
+          "imagePath": "Assets/Images/6.png"
+        },
+        {
+          "id": "4",
+          "name": "Men's Shoes",
+          "price": 79.99,
+          "description": "Stylish and comfortable shoes for men"
+          ,
+          "imagePath": "Assets/Images/7.png"
+        },
+        {
+          "id": "5",
+          "name": "Men's Accessories",
+          "price": 34.99,
+          "description": "Accessorize your look with trendy men's accessories"
+          ,
+          "imagePath": "Assets/Images/4.png"
+        }
+      ]
+    },
+    {
+      "id": "10",
+      "name": "KIDS",
+      "imagePath": "Assets/Images/Kids.png",
+      "subcategories": [
+        {
+          "id": "1",
+          "name": "Kids Dresses",
+          "price": 24.99,
+          "description": "Adorable dresses for fashionable kids"
+          ,
+          "imagePath": "Assets/Images/1.png"
+        },
+        {
+          "id": "2",
+          "name": "Kids Shoes",
+          "price": 19.99,
+          "description": "Cute and comfortable shoes for kids"
+          ,
+          "imagePath": "Assets/Images/3.png"
+        },
+        {
+          "id": "3",
+          "name": "Kids T-Shirts",
+          "price": 14.99,
+          "description": "Colorful and playful T-shirts for kids"
+          ,
+          "imagePath": "Assets/Images/2.png"
+
+        },
+        {
+          "id": "4",
+          "name": "Kids Jeans",
+          "price": 29.99,
+          "description": "Durable and comfortable jeans for active kids"
+          ,
+          "imagePath": "Assets/Images/4.png"
+        },
+        {
+          "id": "5",
+          "name": "Kids Accessories",
+          "price": 9.99,
+          "description": "Fun accessories for trendy kids"  ,
+          "imagePath": "Assets/Images/3.png"
+        }
+      ]
+    }
+  ]
+}

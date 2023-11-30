@@ -1,4 +1,4 @@
-class myRoutes {
+class MyRoutes {
   static const String splash = '/splash';
   static const String walkthrough = '/walkthrough';
   static const String home = '/';
@@ -7,40 +7,6 @@ class myRoutes {
   static const String forgotPassword = '/forgot-password';
   static const String profile = '/profile';
   static const String editProfile = '/edit-profile';
-  static const String changePassword = '/change-password';
-  static const String changeLanguage = '/change-language';
-  static const String changeTheme = '/change-theme';
-  static const String changeCurrency = '/change-currency';
-  static const String changeCountry = '/change-country';
-  static const String changeCity = '/change-city';
-  static const String changeAddress = '/change-address';
-  static const String changePhone = '/change-phone';
-  static const String changeEmail = '/change-email';
-  static const String changeNotification = '/change-notification';
-  static const String changePrivacy = '/change-privacy';
-  static const String changeAbout = '/change-about';
-  static const String changeTerms = '/change-terms';
-  static const String changeHelp = '/change-help';
-  static const String changeFAQ = '/change-faq';
-  static const String changeContact = '/change-contact';
-  static const String changeSocial = '/change-social';
-  static const String changeShare = '/change-share';
-  static const String changeRate = '/change-rate';
-  static const String changeLogout = '/change-logout';
-  static const String changeDelete = '/change-delete';
-  static const String changeDeactivate = '/change-deactivate';
-  static const String changeDeactivateConfirm = '/change-deactivate-confirm';
-  static const String changeDeactivateSuccess = '/change-deactivate-success';
-  static const String changeDeactivateFailed = '/change-deactivate-failed';
-  static const String changeDeleteConfirm = '/change-delete-confirm';
-  static const String changeDeleteSuccess = '/change-delete-success';
-  static const String changeDeleteFailed = '/change-delete-failed';
-  static const String changeLogoutConfirm = '/change-logout-confirm';
-  static const String changeLogoutSuccess = '/change-logout-success';
-  static const String changeLogoutFailed = '/change-logout-failed';
-  static const String changeRateConfirm = '/change-rate-confirm';
-  static const String changeRateSuccess = '/change-rate-success';
-  static const String changeRateFailed = '/change-rate-failed';
-  static const String changeShareConfirm = '/change-share-confirm';
-  static const String changeShareSuccess = '/change-share-success';
+  static const String Categoryscreen = "/Category";
+  static const String subcategoryscreen = "/Subcategory";
 }

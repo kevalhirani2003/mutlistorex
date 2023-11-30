@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:multistorex_mobileapp_/apps/app_locationzaltion.dart';
 import 'package:multistorex_mobileapp_/consantnames.dart';
+import 'package:multistorex_mobileapp_/widgits/customtextstyle.dart';
 
 class Onboardingscreen extends StatefulWidget {
   const Onboardingscreen({Key? key}) : super(key: key);
@@ -27,7 +28,7 @@ class _OnboardingscreenState extends State<Onboardingscreen> {
               decoration:
                   BoxDecoration(color: Color.fromRGBO(187, 187, 187, 0.4)),
               child: Image.asset(
-                "Assets/Onboarding.png", // Make sure the path is correct
+                "Assets/Images/Onboarding.png", // Make sure the path is correct
                 fit: BoxFit.fill,
               ),
             ),
@@ -56,13 +57,10 @@ class _OnboardingscreenState extends State<Onboardingscreen> {
                           Text(
                             AppLocalizations.of(context)!
                                 .getTranslatedValue('welcome_to'),
-                            style: TextStyle(
+                            style: FontUtils.getfontStyle(
                               color: Color.fromRGBO(17, 17, 17, 1),
-                              fontFamily: 'Inter',
-                              fontSize: 34.0,
                               fontWeight: FontWeight.w400,
-                              height:
-                                  1.2, // Calculated as line-height/font-size
+                              height: 1.2,
                               letterSpacing: 0.0,
                             ),
                           ),
@@ -70,13 +68,11 @@ class _OnboardingscreenState extends State<Onboardingscreen> {
                             children: [
                               Text(
                                 AppConstants.appName,
-                                style: TextStyle(
+                                style: FontUtils.getfontStyle(
                                   color: Color.fromRGBO(17, 17, 17, 1),
-                                  fontFamily: 'Manrope',
                                   fontSize: 49.0,
                                   fontWeight: FontWeight.w600,
-                                  height:
-                                      1.37, // Calculated as line-height/font-size
+                                  height: 1.2,
                                   letterSpacing: 0.0,
                                 ),
                               ),
@@ -86,7 +82,7 @@ class _OnboardingscreenState extends State<Onboardingscreen> {
                               GestureDetector(
                                 child: Container(
                                     child: SvgPicture.asset(
-                                  'Assets/arrow.svg',
+                                  'Assets/Icon/arrow.svg',
                                   height: 41.0,
                                   width: 32.0,
                                 )),
@@ -103,6 +99,12 @@ class _OnboardingscreenState extends State<Onboardingscreen> {
                                 AppLocalizations.of(context)!
                                     .getTranslatedValue('skip'),
                                 textAlign: TextAlign.right,
+                                style: FontUtils.getfontStyle(
+                                  color: Color.fromRGBO(17, 17, 17, 1),
+                                  fontSize: 16.0,
+                                  height: 1.2,
+                                  letterSpacing: 0.0,
+                                ),
                               ),
                             ),
                           ),

@@ -8,4 +8,6 @@ class AppConstants {
     Color.fromRGBO(255, 197, 111, 0)
     // Add more colors as needed
   ];
+  static const frequetcolor = Color.fromRGBO(255, 197, 111, 1);
+  static const Textcolor = Color.fromRGBO(51, 51, 51, 1);
 }

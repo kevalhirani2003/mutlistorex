@@ -70,18 +70,18 @@ void main() {
     MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Dynamic Sliding Container Page'),
+          title: const Text('Dynamic Sliding Container Page'),
         ),
         body: Center(
           child: SlidingContainer(
-            duration: Duration(seconds: 2),
-            beginOffset: Offset(0.0, 1.0),
+            duration: const Duration(seconds: 2),
+            beginOffset: const Offset(0.0, 1.0),
             endOffset: Offset.zero,
             child: Container(
               width: 200.0,
               height: 200.0,
               color: Colors.blue,
-              child: Center(
+              child: const Center(
                 child: Text(
                   'Dynamic Sliding Container',
                   style: TextStyle(

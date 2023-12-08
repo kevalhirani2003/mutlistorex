@@ -3,7 +3,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:multistorex_mobileapp_/Screens/subcategoryscreen.dart';
 import 'package:multistorex_mobileapp_/apps/app_locationzaltion.dart';
 
-import 'package:multistorex_mobileapp_/consantnames.dart';
+import 'package:multistorex_mobileapp_/utils/consantnames.dart';
 import 'package:multistorex_mobileapp_/cubit/categorycubit.dart';
 import 'package:multistorex_mobileapp_/widgits/customappbar.dart';
 import 'package:multistorex_mobileapp_/widgits/customtextstyle.dart';
@@ -47,7 +47,7 @@ class _CategoryscreenState extends State<Categoryscreen> {
             Container(
                 height: containerHeight,
                 width: containerWidth * 1,
-                decoration: BoxDecoration(
+                decoration: const BoxDecoration(
                     gradient: LinearGradient(
                         begin: Alignment.topCenter,
                         end: Alignment.bottomCenter,
@@ -57,7 +57,7 @@ class _CategoryscreenState extends State<Categoryscreen> {
                     Column(
                       mainAxisAlignment: MainAxisAlignment.start,
                       children: [
-                        Container(
+                        SizedBox(
                           height: containerHeight * 0.04,
                           width: containerWidth * 0.82,
                           child: Text(
@@ -74,14 +74,14 @@ class _CategoryscreenState extends State<Categoryscreen> {
                           print('Builder called with state: $state');
                           if (state is CategoriesLoaded) {
                             final categories = state.categories;
-                            return Container(
+                            return SizedBox(
                               height: containerHeight * 1.5,
                               width: containerWidth * 0.9,
                               child: GridView.builder(
-                                  physics: NeverScrollableScrollPhysics(),
+                                  physics: const NeverScrollableScrollPhysics(),
                                   shrinkWrap: true,
                                   gridDelegate:
-                                      SliverGridDelegateWithFixedCrossAxisCount(
+                                      const SliverGridDelegateWithFixedCrossAxisCount(
                                           childAspectRatio: 0.75,
                                           crossAxisCount: 2),
                                   itemCount: categories.length,
@@ -112,9 +112,9 @@ class _CategoryscreenState extends State<Categoryscreen> {
                                         },
                                         child: Container(
                                             decoration: BoxDecoration(
-                                                borderRadius:
-                                                    BorderRadius.circular(15),
-                                                color: Colors.white),
+                                              borderRadius:
+                                                  BorderRadius.circular(15),
+                                            ),
                                             height: 100,
                                             width:
                                                 200, // Adjust width as needed
@@ -134,7 +134,7 @@ class _CategoryscreenState extends State<Categoryscreen> {
                                                             10.0),
                                                   ),
                                                 ),
-                                                SizedBox(height: 5.0),
+                                                const SizedBox(height: 5.0),
                                                 Text(
                                                   category.name,
                                                   style: FontUtils.getfontStyle(
@@ -150,8 +150,8 @@ class _CategoryscreenState extends State<Categoryscreen> {
                                   }),
                             );
                           } else {
-                            print(state.toString() + "else");
-                            return Center(
+                            print("${state}else");
+                            return const Center(
                               child: CircularProgressIndicator(),
                             );
                           }

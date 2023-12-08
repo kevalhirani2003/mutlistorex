@@ -32,7 +32,7 @@ class _HomepageState extends State<Homepage> {
     }
 
     // Call loadCategories when the widget is first built
-    WidgetsBinding.instance?.addPostFrameCallback((_) {
+    WidgetsBinding.instance.addPostFrameCallback((_) {
       loadCategories();
     });
 
@@ -52,7 +52,7 @@ class _HomepageState extends State<Homepage> {
               ),
               Padding(
                 padding: const EdgeInsets.only(top: 5, left: 10.0, right: 10.0),
-                child: Container(
+                child: SizedBox(
                   height: containerHeight * 0.05,
                   child: Row(
                     children: [
@@ -60,13 +60,13 @@ class _HomepageState extends State<Homepage> {
                         AppLocalizations.of(context)!
                             .getTranslatedValue('deliever to'),
                         style: FontUtils.getfontStyle(
-                          color: Color.fromRGBO(102, 102, 102, 1),
+                          color: const Color.fromRGBO(102, 102, 102, 1),
                           fontSize: 14.0,
                           fontWeight: FontWeight.w400,
                         ),
                       ),
-                      Spacer(),
-                      Container(
+                      const Spacer(),
+                      SizedBox(
                         height: 26,
                         width: 26,
                         child: SvgPicture.asset("Assets/Icon/location.svg"),
@@ -77,7 +77,7 @@ class _HomepageState extends State<Homepage> {
               ),
               Container(
                 height: 200,
-                decoration: BoxDecoration(
+                decoration: const BoxDecoration(
                   borderRadius: BorderRadius.only(
                     bottomLeft: Radius.circular(20.0),
                     bottomRight: Radius.circular(20.0),
@@ -110,7 +110,7 @@ class _HomepageState extends State<Homepage> {
                               itemBuilder: (context, index) {
                                 final category = categories[index];
                                 return Container(
-                                  margin: EdgeInsets.all(8.0),
+                                  margin: const EdgeInsets.all(8.0),
                                   child: Column(
                                     children: [
                                       Container(
@@ -125,7 +125,7 @@ class _HomepageState extends State<Homepage> {
                                               color:
                                                   Colors.black.withOpacity(0.2),
                                               blurRadius: 8.0,
-                                              offset: Offset(0, 5),
+                                              offset: const Offset(0, 5),
                                             ),
                                           ],
                                         ),
@@ -138,7 +138,7 @@ class _HomepageState extends State<Homepage> {
                                           ),
                                         ),
                                       ),
-                                      SizedBox(height: 8.0),
+                                      const SizedBox(height: 8.0),
                                       Text(
                                         category.name,
                                         style: FontUtils.getfontStyle(
@@ -153,7 +153,7 @@ class _HomepageState extends State<Homepage> {
                             ),
                           );
                         } else {
-                          return Center(
+                          return const Center(
                             child: CircularProgressIndicator(),
                           );
                         }
@@ -164,10 +164,6 @@ class _HomepageState extends State<Homepage> {
               ),
             ],
           ),
-          // Positioned(
-          //     left: containerWidth / 2 - 150,
-          //     bottom: MediaQuery.of(context).size.width / 2 - 180,
-          //     child: CustomNavigationBar())
         ],
       ),
     );

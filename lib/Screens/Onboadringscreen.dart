@@ -1,9 +1,7 @@
-import 'dart:ui';
-
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:multistorex_mobileapp_/apps/app_locationzaltion.dart';
-import 'package:multistorex_mobileapp_/consantnames.dart';
+import 'package:multistorex_mobileapp_/utils/consantnames.dart';
 import 'package:multistorex_mobileapp_/widgits/customtextstyle.dart';
 
 class Onboardingscreen extends StatefulWidget {
@@ -25,11 +23,12 @@ class _OnboardingscreenState extends State<Onboardingscreen> {
           children: [
             Container(
               height: containerHeight,
-              decoration:
-                  BoxDecoration(color: Color.fromRGBO(187, 187, 187, 0.4)),
+              width: containerWidth,
+              decoration: const BoxDecoration(
+                  color: Color.fromRGBO(187, 187, 187, 0.4)),
               child: Image.asset(
                 "Assets/Images/Onboarding.png", // Make sure the path is correct
-                fit: BoxFit.fill,
+                fit: BoxFit.contain,
               ),
             ),
             Positioned(
@@ -37,7 +36,7 @@ class _OnboardingscreenState extends State<Onboardingscreen> {
               child: Container(
                   width: containerWidth,
                   height: containerHeight * 0.3,
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     gradient: LinearGradient(
                       colors: [
                         Color.fromRGBO(255, 255, 255, 0),
@@ -58,7 +57,8 @@ class _OnboardingscreenState extends State<Onboardingscreen> {
                             AppLocalizations.of(context)!
                                 .getTranslatedValue('welcome_to'),
                             style: FontUtils.getfontStyle(
-                              color: Color.fromRGBO(17, 17, 17, 1),
+                              color: const Color.fromRGBO(17, 17, 17, 1),
+                              fontSize: 34,
                               fontWeight: FontWeight.w400,
                               height: 1.2,
                               letterSpacing: 0.0,
@@ -69,14 +69,14 @@ class _OnboardingscreenState extends State<Onboardingscreen> {
                               Text(
                                 AppConstants.appName,
                                 style: FontUtils.getfontStyle(
-                                  color: Color.fromRGBO(17, 17, 17, 1),
+                                  color: const Color.fromRGBO(17, 17, 17, 1),
                                   fontSize: 49.0,
                                   fontWeight: FontWeight.w600,
                                   height: 1.2,
                                   letterSpacing: 0.0,
                                 ),
                               ),
-                              SizedBox(
+                              const SizedBox(
                                 width: 10.0,
                               ),
                               GestureDetector(
@@ -89,8 +89,8 @@ class _OnboardingscreenState extends State<Onboardingscreen> {
                               ),
                             ],
                           ),
-                          Container(
-                            width: containerWidth * 0.9,
+                          SizedBox(
+                            width: containerWidth * 0.8,
                             child: GestureDetector(
                               onTap: () {
                                 Navigator.pushNamed(context, '/login');
@@ -100,7 +100,7 @@ class _OnboardingscreenState extends State<Onboardingscreen> {
                                     .getTranslatedValue('skip'),
                                 textAlign: TextAlign.right,
                                 style: FontUtils.getfontStyle(
-                                  color: Color.fromRGBO(17, 17, 17, 1),
+                                  color: const Color.fromRGBO(17, 17, 17, 1),
                                   fontSize: 16.0,
                                   height: 1.2,
                                   letterSpacing: 0.0,

@@ -13,9 +13,9 @@ class FontUtils {
         fontFamily: fontFamily ?? 'Manrope',
         fontSize: fontSize ?? 49.0,
         fontWeight: fontWeight ?? FontWeight.w400,
-        height: height ?? 1.37,
+        height: height ?? 1.0,
         letterSpacing: letterSpacing ?? 0.0,
-        color: color ?? Color.fromRGBO(17, 17, 17, 1));
+        color: color ?? const Color.fromRGBO(17, 17, 17, 1));
   }
 
   // Add more methods for other common text styles as needed

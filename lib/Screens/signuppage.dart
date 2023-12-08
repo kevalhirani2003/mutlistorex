@@ -30,7 +30,7 @@ class _SignuppageState extends State<Signuppage> {
             await ImagePicker().pickImage(source: ImageSource.gallery);
         if (image1 == null) return;
         final imageTemporary = File(image1.path);
-        this.image = imageTemporary;
+        image = imageTemporary;
         setState(() {});
         print("object");
       } on PlatformException catch (e) {
@@ -43,7 +43,7 @@ class _SignuppageState extends State<Signuppage> {
               await ImagePicker().pickImage(source: ImageSource.camera);
           if (image1 == null) return;
           final imageTemporary = File(image1.path);
-          this.image = imageTemporary;
+          image = imageTemporary;
           setState(() {});
           print("object");
         } on PlatformException catch (e) {
@@ -69,13 +69,14 @@ class _SignuppageState extends State<Signuppage> {
         ),
         Positioned(
           child: SlidingContainer(
-            endOffset: Offset(0.0, 0.20),
+            endOffset: const Offset(0.0, 0.20),
             child: Stack(children: [
               Column(children: [
                 Text(
                   AppLocalizations.of(context)!
                       .getTranslatedValue('registerwithus'),
                   style: FontUtils.getfontStyle(
+                    fontFamily: "Inter",
                     fontSize: 39.0,
                     fontWeight: FontWeight.w600,
                   ),
@@ -86,7 +87,7 @@ class _SignuppageState extends State<Signuppage> {
                 Container(
                   height: containerHeight * 0.75,
                   width: containerWidth,
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     color: Color.fromRGBO(255, 239, 228, 1),
                     borderRadius: BorderRadius.only(
                         topLeft: Radius.circular(50.0),
@@ -193,7 +194,7 @@ class _SignuppageState extends State<Signuppage> {
                                 style: FontUtils.getfontStyle(
                                   fontSize: 16.0,
                                   fontWeight: FontWeight.w500,
-                                  color: Color.fromRGBO(0, 0, 0, 1),
+                                  color: const Color.fromRGBO(0, 0, 0, 1),
                                 ),
                               ),
                             ),
@@ -228,7 +229,7 @@ class _SignuppageState extends State<Signuppage> {
                                       borderRadius: BorderRadius.circular(50)),
                                   width: 100,
                                   height: 100,
-                                  child: Icon(Icons.person,
+                                  child: const Icon(Icons.person,
                                       size: 50, color: Colors.black),
                                 )),
                     ),
@@ -242,7 +243,7 @@ class _SignuppageState extends State<Signuppage> {
                             onPressed: () {
                               pickImage();
                             },
-                            icon: Icon(Icons.camera_alt),
+                            icon: const Icon(Icons.camera_alt),
                           ),
                         ))
                   ],

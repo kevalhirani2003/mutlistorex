@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:multistorex_mobileapp_/apps/app_locationzaltion.dart';
-import 'package:multistorex_mobileapp_/consantnames.dart';
+import 'package:multistorex_mobileapp_/utils/consantnames.dart';
 import 'package:multistorex_mobileapp_/widgits/Validation.dart';
 import 'package:multistorex_mobileapp_/widgits/animation/customsildinganimation.dart';
 import 'package:multistorex_mobileapp_/widgits/custombutton.dart';
@@ -27,10 +27,13 @@ class loginpage extends StatelessWidget {
         Positioned(
           bottom: 0,
           child: SlidingContainer(
+            duration: const Duration(seconds: 1),
+            beginOffset: const Offset(0.0, 1.0),
+            endOffset: const Offset(0.0, 0.0),
             child: Container(
                 height: containerHeight * 0.55,
                 width: containerWidth,
-                decoration: BoxDecoration(
+                decoration: const BoxDecoration(
                   color: Color.fromRGBO(255, 239, 228, 1),
                   borderRadius: BorderRadius.only(
                       topLeft: Radius.circular(50.0),
@@ -39,6 +42,9 @@ class loginpage extends StatelessWidget {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
+                    SizedBox(
+                      height: containerHeight * 0.05,
+                    ),
                     Text(
                       AppLocalizations.of(context)!
                           .getTranslatedValue('welcome_to'),
@@ -54,16 +60,19 @@ class loginpage extends StatelessWidget {
                         fontWeight: FontWeight.w600,
                       ),
                     ),
+                    SizedBox(
+                      height: 5.0,
+                    ),
                     Text(
                       AppLocalizations.of(context)!
                           .getTranslatedValue('Enter_your_details_below'),
                       style: FontUtils.getfontStyle(
-                        color: Color.fromRGBO(102, 102, 102, 1),
+                        color: const Color.fromRGBO(102, 102, 102, 1),
                         fontSize: 16.0,
                         fontWeight: FontWeight.w400,
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 20.0,
                     ),
                     CustomTextInputWithIcon(
@@ -75,7 +84,7 @@ class loginpage extends StatelessWidget {
                       controller: emailController,
                       validator: (value) => Validators.validateUsername(value),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 20.0,
                     ),
                     CustomTextInputWithIcon(
@@ -99,7 +108,7 @@ class loginpage extends StatelessWidget {
                             child: Text(
                                 AppLocalizations.of(context)!
                                     .getTranslatedValue('forgot_password'),
-                                style: TextStyle(
+                                style: const TextStyle(
                                   decoration: TextDecoration.underline,
                                   fontFamily: "Manrope",
                                   color: Color.fromRGBO(0, 0, 0, 1),
@@ -114,12 +123,12 @@ class loginpage extends StatelessWidget {
                       text: AppLocalizations.of(context)!
                           .getTranslatedValue('login'),
                       onPressed: () {
-                        Navigator.pushNamed(context, '/');
+                        Navigator.pushNamed(context, '/Activity');
                       },
                       height: containerHeight * 0.06,
                       width: containerWidth * 0.8,
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 20.0,
                     ),
                     Row(
@@ -129,7 +138,7 @@ class loginpage extends StatelessWidget {
                           AppLocalizations.of(context)!
                               .getTranslatedValue("donthaveanaccount"),
                           style: FontUtils.getfontStyle(
-                            color: Color.fromRGBO(0, 0, 0, 1),
+                            color: const Color.fromRGBO(0, 0, 0, 1),
                             fontSize: 16.0,
                             fontWeight: FontWeight.w400,
                           ),
@@ -141,7 +150,7 @@ class loginpage extends StatelessWidget {
                           child: Text(
                               AppLocalizations.of(context)!
                                   .getTranslatedValue("Clickhere"),
-                              style: TextStyle(
+                              style: const TextStyle(
                                 decoration: TextDecoration.underline,
                                 fontFamily: "Manrope",
                                 color: Color.fromRGBO(0, 0, 0, 1),
@@ -153,9 +162,6 @@ class loginpage extends StatelessWidget {
                     ),
                   ],
                 )),
-            duration: Duration(seconds: 1),
-            beginOffset: Offset(0.0, 1.0),
-            endOffset: Offset(0.0, 0.0),
           ),
         )
       ]),

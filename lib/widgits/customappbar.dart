@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:multistorex_mobileapp_/consantnames.dart';
+import 'package:multistorex_mobileapp_/utils/consantnames.dart';
 
 class CustomAppBar extends StatelessWidget {
   final double containerHeight;
@@ -19,7 +19,7 @@ class CustomAppBar extends StatelessWidget {
         Container(
           height: containerHeight * 0.075,
           width: containerWidth,
-          decoration: BoxDecoration(
+          decoration: const BoxDecoration(
             color: Color.fromRGBO(255, 216, 156, 1),
           ),
           child: Padding(
@@ -28,7 +28,7 @@ class CustomAppBar extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 GestureDetector(
-                  child: Container(
+                  child: SizedBox(
                     height: 30,
                     width: 30,
                     child: SvgPicture.asset(AppConstants.logoImagepath),
@@ -37,16 +37,16 @@ class CustomAppBar extends StatelessWidget {
                 SizedBox(
                   width: containerWidth * 0.02,
                 ),
-                Text(
+                const Text(
                   AppConstants.appName,
                   style: TextStyle(
                     fontSize: 18.0,
                     fontWeight: FontWeight.w600,
                   ),
                 ),
-                Spacer(),
+                const Spacer(),
                 GestureDetector(
-                  child: Container(
+                  child: SizedBox(
                     height: 30,
                     width: 30,
                     child: SvgPicture.asset("Assets/Icon/bell.svg"),
@@ -56,7 +56,7 @@ class CustomAppBar extends StatelessWidget {
                   width: containerWidth * 0.02,
                 ),
                 GestureDetector(
-                  child: Container(
+                  child: SizedBox(
                     height: 30,
                     width: 30,
                     child: SvgPicture.asset("Assets/Icon/heart.svg"),
@@ -66,7 +66,7 @@ class CustomAppBar extends StatelessWidget {
                   width: containerWidth * 0.02,
                 ),
                 GestureDetector(
-                  child: Container(
+                  child: SizedBox(
                     height: 30,
                     width: 30,
                     child: SvgPicture.asset("Assets/Icon/cart.svg"),

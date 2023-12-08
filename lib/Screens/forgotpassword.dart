@@ -18,6 +18,7 @@ class Forgotpasswordpage extends StatelessWidget {
     TextEditingController confirmPasswordController = TextEditingController();
     double containerHeight = MediaQuery.of(context).size.height;
     double containerWidth = MediaQuery.of(context).size.width;
+    double responsiveheight = MediaQuery.of(context).size.width;
     return Scaffold(
         body: Stack(
       fit: StackFit.expand,
@@ -26,9 +27,9 @@ class Forgotpasswordpage extends StatelessWidget {
             containerHeight: containerHeight, containerWidth: containerWidth),
         Positioned(
           child: SlidingContainer(
-              endOffset: Offset(0.0, 0.6),
+              endOffset: const Offset(0.0, 0.6),
               child: Container(
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     color: Color.fromRGBO(255, 239, 228, 1),
                     borderRadius: BorderRadius.only(
                         topLeft: Radius.circular(40.0),
@@ -50,7 +51,7 @@ class Forgotpasswordpage extends StatelessWidget {
                               AppLocalizations.of(context)!
                                   .getTranslatedValue('back'),
                               style: FontUtils.getfontStyle(
-                                color: Color.fromRGBO(0, 0, 0, 1),
+                                color: const Color.fromRGBO(0, 0, 0, 1),
                                 fontSize: 16.0,
                                 fontWeight: FontWeight.w400,
                               ),
@@ -64,7 +65,7 @@ class Forgotpasswordpage extends StatelessWidget {
                                     context,
                                     MaterialPageRoute(
                                         builder: (context) =>
-                                            Onboardingscreen()));
+                                            const Onboardingscreen()));
                               },
                               child: SvgPicture.asset(
                                 "Assets/Icon/cross.svg",
@@ -90,7 +91,7 @@ class Forgotpasswordpage extends StatelessWidget {
                         AppLocalizations.of(context)!.getTranslatedValue(
                             'enter your new passwords below'),
                         style: FontUtils.getfontStyle(
-                          color: Color.fromRGBO(102, 102, 102, 1),
+                          color: const Color.fromRGBO(102, 102, 102, 1),
                           fontSize: 16.0,
                           fontWeight: FontWeight.w400,
                         ),
@@ -133,7 +134,8 @@ class Forgotpasswordpage extends StatelessWidget {
                             Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                    builder: (context) => Onboardingscreen()));
+                                    builder: (context) =>
+                                        const Onboardingscreen()));
                           })
                     ],
                   ))),

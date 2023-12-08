@@ -29,7 +29,7 @@ class _CustomSearchBarState extends State<CustomSearchBar> {
               color: Colors.grey.withOpacity(0.3),
               spreadRadius: 1,
               blurRadius: 4,
-              offset: Offset(0, 2),
+              offset: const Offset(0, 2),
             ),
           ],
         ),
@@ -38,18 +38,18 @@ class _CustomSearchBarState extends State<CustomSearchBar> {
           children: [
             Padding(
               padding: const EdgeInsets.only(left: 10.0),
-              child: Container(
+              child: SizedBox(
                   height: 17,
                   width: 17,
                   child: SvgPicture.asset("Assets/Icon/search.svg")),
             ),
-            SizedBox(width: 10.0),
+            const SizedBox(width: 10.0),
             Expanded(
               child: TextField(
                 controller: _searchController,
                 decoration: InputDecoration(
                   hintText: widget.hintText,
-                  hintStyle: TextStyle(
+                  hintStyle: const TextStyle(
                     fontFamily: "Inter",
                     fontSize: 14.0,
                     fontWeight: FontWeight.w400,

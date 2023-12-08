@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:multistorex_mobileapp_/consantnames.dart';
+import 'package:multistorex_mobileapp_/utils/consantnames.dart';
 import 'package:multistorex_mobileapp_/cubit/categorycubit.dart';
 import 'package:multistorex_mobileapp_/cubit/subcategorycubit.dart';
 import 'package:multistorex_mobileapp_/widgits/customappbar.dart';
@@ -38,9 +38,9 @@ class SubcategoryScreen extends StatelessWidget {
                       containerWidth: containerWidth,
                     ),
                     Container(
-                      height: containerHeight * 1.17,
+                      height: containerHeight * 1.30,
                       width: containerWidth * 1,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         gradient: LinearGradient(
                           begin: Alignment.topCenter,
                           end: Alignment.bottomCenter,
@@ -52,7 +52,7 @@ class SubcategoryScreen extends StatelessWidget {
                           Row(
                             children: [
                               GestureDetector(
-                                child: Container(
+                                child: const SizedBox(
                                   height: 30,
                                   width: 30,
                                   child: Icon(
@@ -67,80 +67,108 @@ class SubcategoryScreen extends StatelessWidget {
                               Text(selectedCategory.name,
                                   style: FontUtils.getfontStyle(
                                     fontFamily: "Libre Baskerville",
-                                    color: Color.fromRGBO(17, 17, 17, 1),
+                                    color: const Color.fromRGBO(17, 17, 17, 1),
                                     fontWeight: FontWeight.w400,
                                     fontSize: 17.0,
                                     height: 1.2,
                                     letterSpacing: 0.0,
                                   )),
-                              Spacer(),
+                              const Spacer(),
                             ],
                           ),
-                          SizedBox(
-                            height: containerHeight * 0.02,
-                          ),
                           Container(
+                            height: containerHeight * 0.270,
+                            width: containerWidth * 0.840,
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(15.0),
+                              color: Colors.white,
+                            ),
                             child: Column(
                               children: [
                                 Container(
-                                  decoration: BoxDecoration(
-                                    borderRadius: BorderRadius.circular(15.0),
-                                  ),
-                                  height: containerHeight * 0.3,
-                                  width: containerWidth * 0.8,
-                                  child:
-                                      Image.asset(subcategories[0].imagePath),
-                                ),
+                                    decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(15.0),
+                                      color: Colors.black,
+                                    ),
+                                    height: containerHeight * 0.23,
+                                    width: containerWidth * 0.835,
+                                    child: ClipRRect(
+                                      borderRadius: BorderRadius.circular(15.0),
+                                      child: Image.asset(
+                                        subcategories[0].imagePath,
+                                        fit: BoxFit.cover,
+                                      ),
+                                    )),
                                 Text(
                                   subcategories[0].name,
-                                  style: TextStyle(
-                                    fontSize: 18.0,
+                                  style: FontUtils.getfontStyle(
+                                    fontFamily: "Inter",
                                     fontWeight: FontWeight.w600,
+                                    fontSize: 13.0,
+                                    height: 1.2,
+                                    letterSpacing: 0.0,
                                   ),
                                 ),
                               ],
                             ),
                           ),
-                          Container(
-                            height: containerHeight * 0.8,
-                            width: containerWidth * 1,
-                            child: GridView.builder(
-                              gridDelegate:
-                                  SliverGridDelegateWithFixedCrossAxisCount(
-                                      crossAxisCount: 2,
-                                      childAspectRatio: 0.72),
-                              physics: NeverScrollableScrollPhysics(),
-                              itemCount: subcategories.length - 1,
-                              itemBuilder: (context, index) {
-                                return Padding(
-                                  padding: const EdgeInsets.all(8.0),
-                                  child: Container(
-                                    color: Colors.white,
-                                    child: Column(
-                                      children: [
-                                        Container(
-                                          decoration: BoxDecoration(
-                                            borderRadius:
-                                                BorderRadius.circular(15.0),
+                          Padding(
+                            padding: const EdgeInsets.only(left: 25, right: 25),
+                            child: SizedBox(
+                              height: containerHeight * 0.8,
+                              width: containerWidth * 1,
+                              child: GridView.builder(
+                                gridDelegate:
+                                    const SliverGridDelegateWithFixedCrossAxisCount(
+                                        crossAxisCount: 2,
+                                        childAspectRatio: 0.68),
+                                physics: const NeverScrollableScrollPhysics(),
+                                itemCount: subcategories.length - 1,
+                                itemBuilder: (context, index) {
+                                  return Padding(
+                                    padding: const EdgeInsets.all(8.0),
+                                    child: Container(
+                                      decoration: BoxDecoration(
+                                        borderRadius:
+                                            BorderRadius.circular(15.0),
+                                        color: Colors.white,
+                                      ),
+                                      child: Column(
+                                        children: [
+                                          Container(
+                                            decoration: BoxDecoration(
+                                              borderRadius:
+                                                  BorderRadius.circular(15.0),
+                                            ),
+                                            height: containerHeight * 0.25,
+                                            width: containerWidth * 0.8,
+                                            child: ClipRRect(
+                                              borderRadius:
+                                                  BorderRadius.circular(15.0),
+                                              child: Image.asset(
+                                                  fit: BoxFit.cover,
+                                                  subcategories[index + 1]
+                                                      .imagePath),
+                                            ),
                                           ),
-                                          height: containerHeight * 0.2,
-                                          width: containerWidth * 0.8,
-                                          child: Image.asset(
-                                              subcategories[index + 1]
-                                                  .imagePath),
-                                        ),
-                                        Text(
-                                          subcategories[index].name,
-                                          style: TextStyle(
-                                            fontSize: 18.0,
-                                            fontWeight: FontWeight.w600,
+                                          Text(
+                                            subcategories[index + 1].name,
+                                            style: FontUtils.getfontStyle(
+                                              fontFamily: "Inter",
+                                              color:
+                                                  const Color.fromRGBO(17, 17, 17, 1),
+                                              fontWeight: FontWeight.w600,
+                                              fontSize: 13.0,
+                                              height: 1.2,
+                                              letterSpacing: 0.0,
+                                            ),
                                           ),
-                                        ),
-                                      ],
+                                        ],
+                                      ),
                                     ),
-                                  ),
-                                );
-                              },
+                                  );
+                                },
+                              ),
                             ),
                           ),
                         ],

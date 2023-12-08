@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:multistorex_mobileapp_/consantnames.dart';
+import 'package:multistorex_mobileapp_/utils/consantnames.dart';
 
 class WelcomeStack extends StatelessWidget {
   final double containerHeight;
   final double containerWidth;
 
-  WelcomeStack({
+  const WelcomeStack({
+    super.key,
     required this.containerHeight,
     required this.containerWidth,
   });
@@ -18,10 +19,11 @@ class WelcomeStack extends StatelessWidget {
       children: [
         Container(
           height: containerHeight,
-          decoration: BoxDecoration(color: Color.fromRGBO(187, 187, 187, 0.4)),
+          decoration:
+              const BoxDecoration(color: Color.fromRGBO(187, 187, 187, 0.4)),
           child: Image.asset(
             "Assets/Images/Onboarding.png", // Make sure the path is correct
-            fit: BoxFit.fill,
+            fit: BoxFit.contain,
           ),
         ),
         Positioned(
@@ -29,7 +31,7 @@ class WelcomeStack extends StatelessWidget {
           child: Container(
             width: containerWidth,
             height: containerHeight * 0.3,
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
               gradient: LinearGradient(
                 colors: [
                   Color.fromRGBO(255, 255, 255, 0),
@@ -46,7 +48,7 @@ class WelcomeStack extends StatelessWidget {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text(
+                    const Text(
                       "Welcome to", // Replace with your localized string
                       style: TextStyle(
                         fontSize: 27.0,
@@ -54,7 +56,7 @@ class WelcomeStack extends StatelessWidget {
                     ),
                     Row(
                       children: [
-                        Text(
+                        const Text(
                           AppConstants
                               .appName, // Replace with your localized string
                           style: TextStyle(
@@ -65,7 +67,7 @@ class WelcomeStack extends StatelessWidget {
                             letterSpacing: 0.0,
                           ),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           width: 10.0,
                         ),
                         GestureDetector(
@@ -79,9 +81,9 @@ class WelcomeStack extends StatelessWidget {
                         ),
                       ],
                     ),
-                    Container(
+                    SizedBox(
                       width: containerWidth * 0.9,
-                      child: Text(
+                      child: const Text(
                         "Skip", // Replace with your localized string
                         textAlign: TextAlign.right,
                       ),
@@ -97,7 +99,7 @@ class WelcomeStack extends StatelessWidget {
           child: Container(
             height: containerHeight * 1,
             width: containerWidth,
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
               color: Color.fromRGBO(187, 187, 187, 0.4),
             ),
           ),
